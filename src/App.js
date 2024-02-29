@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ProductList from "./components/product/ProductList";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const name = "";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Workshop Props</h1>
+      <ProductList>
+        <h5>I am a child prop</h5>
+        <h5>I am a child prop</h5>
+        <h5>I am a child prop</h5>
+        <h5>I am a child prop</h5>
+        <h5>I am a child prop</h5>
+        <h3>I am a child prop</h3>
+      </ProductList>
+      <h2>{name ? `Hello i am ${name}` : "Hello There!"}</h2>
     </div>
   );
 }
